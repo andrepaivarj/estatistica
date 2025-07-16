@@ -56,6 +56,8 @@ def tabela(s_cont, s_casos, fi, fi_pc,fama, fabsma, fabsma_pc, fame, fabsme, fab
     }
     df = pd.DataFrame(data=dados)
     print(df)
+
+#Função que plota os gráficos de frequência relativa e frequência relativa acumulada
 def graficos(s_casos, fi, fabsma, fabsme) -> None:
     plt.plot(s_casos, fabsma, label='Fa+ (Relativa Acumulada Crescente)')
     plt.plot(s_casos[:len(fabsme)], fabsme, label='Fa- (Relativa Acumulada Decrescente)')
