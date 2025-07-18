@@ -24,7 +24,7 @@ def tabela(s_cont, s_casos, fi, fi_pc):
         'fi %': fi_pc
     }
     df = pd.DataFrame(data=dados)
-    print(df)
+    df.to_excel('tabela.xlsx', sheetname='Sheet1')
 
 #Função para plotar o gráfico
 def grafico(s_casos, fi, fi_pc):
@@ -32,6 +32,7 @@ def grafico(s_casos, fi, fi_pc):
     plt.xticks(ticks=s_casos, labels=s_casos)
     plt.yticks(ticks=fi, labels=fi_pc)
     plt.show()
+    plt.savefig('nome.png')
 
 # Função principal
 def main():
