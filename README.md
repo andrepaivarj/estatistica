@@ -1,0 +1,1 @@
+Neste repositório, foram criados programas que fazem uma distribuição de frequências de dados qualitativos e quantitativos discretos. Por ora, é necéssário digitar dado por dado, mas o programa, após fazer os devidos cálculos, cria uma planilha em formato ".xlsx" e salva os gráficos em uma imagem de formato ".png"
