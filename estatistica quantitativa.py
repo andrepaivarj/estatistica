@@ -65,13 +65,13 @@ def graficos(s_casos, fi, fabsma, fabsme) -> None:
     plt.ylabel('Frequência Relativa Acumulada')
     plt.legend()
     plt.show()
-    plt.savefig()
+    plt.savefig('nome1.png')
 
     plt.bar(s_casos, fi)
     plt.xlabel('Casos')
     plt.ylabel('Frequencia Relativa')
     plt.show()
-    plt.savefig()
+    plt.savefig('nome2.png')
 
 #Função Principal
 def main():
