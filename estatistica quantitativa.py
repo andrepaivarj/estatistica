@@ -55,7 +55,7 @@ def tabela(s_cont, s_casos, fi, fi_pc,fama, fabsma, fabsma_pc, fame, fabsme, fab
 
     }
     df = pd.DataFrame(data=dados)
-    df.to_excel('tabela.xlsx', sheetname='Sheet1')
+    df.to_excel('tabela.xlsx', sheet_name='Sheet1')
 
 #Função que plota os gráficos de frequência relativa e frequência relativa acumulada
 def graficos(s_casos, fi, fabsma, fabsme) -> None:
@@ -64,14 +64,14 @@ def graficos(s_casos, fi, fabsma, fabsme) -> None:
     plt.xlabel('Casos')
     plt.ylabel('Frequência Relativa Acumulada')
     plt.legend()
-    plt.show()
     plt.savefig('nome1.png')
+    plt.show()
 
     plt.bar(s_casos, fi)
     plt.xlabel('Casos')
     plt.ylabel('Frequencia Relativa')
-    plt.show()
     plt.savefig('nome2.png')
+    plt.show()
 
 #Função Principal
 def main():
